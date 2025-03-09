@@ -1,4 +1,4 @@
-abstract class LogFilter {
+public abstract class LogFilter {
 
-    abstract fun shouldLog(message: String, level: Level, cause: Throwable?): Boolean
+    public abstract fun shouldLog(message: String, level: Level, cause: Throwable?): Boolean
 }

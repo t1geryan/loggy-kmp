@@ -1,4 +1,4 @@
-abstract class LogPrinter {
+public abstract class LogPrinter {
 
-    abstract fun print(lines: List<String>)
+    public abstract fun print(lines: List<String>)
 }

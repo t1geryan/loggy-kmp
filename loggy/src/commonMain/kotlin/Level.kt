@@ -1,4 +1,4 @@
-enum class Level {
+public enum class Level {
     VERBOSE,
     DEBUG,
     INFO,
