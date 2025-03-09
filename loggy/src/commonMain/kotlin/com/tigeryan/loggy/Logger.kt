@@ -3,22 +3,22 @@ package com.tigeryan.loggy
 public interface Logger {
 
     public fun d(message: String, cause: Throwable?): Unit =
-        log(message, Level.DEBUG, cause)
+        log(message, Level.Debug, cause)
 
     public fun v(message: String, cause: Throwable?): Unit =
-        log(message, Level.VERBOSE, cause)
+        log(message, Level.Verbose, cause)
 
     public fun i(message: String, cause: Throwable?): Unit =
-        log(message, Level.INFO, cause)
+        log(message, Level.Info, cause)
 
     public fun w(message: String, cause: Throwable?): Unit =
-        log(message, Level.WARNING, cause)
+        log(message, Level.Warning, cause)
 
     public fun e(message: String, cause: Throwable?): Unit =
-        log(message, Level.ERROR, cause)
+        log(message, Level.Error, cause)
 
     public fun f(message: String, cause: Throwable?): Unit =
-        log(message, Level.FATAL, cause)
+        log(message, Level.Fatal, cause)
 
     public fun log(message: String, level: Level, cause: Throwable?)
 }
