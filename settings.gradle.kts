@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Lotty"
-include(":library")
+rootProject.name = "Loggy"
+include(":loggy")
