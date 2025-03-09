@@ -1,6 +1,6 @@
 package com.tigeryan.loggy
 
-public abstract class LogPrinter {
+public interface LogPrinter {
 
-    public abstract fun print(lines: List<String>)
+    public fun print(lines: List<String>)
 }
