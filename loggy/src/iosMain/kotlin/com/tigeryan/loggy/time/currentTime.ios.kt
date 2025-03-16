@@ -1,6 +1,6 @@
 package com.tigeryan.loggy.time
 
-import platform.Foundation.NSDate
+import platform.Foundation.*
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.milliseconds
 
