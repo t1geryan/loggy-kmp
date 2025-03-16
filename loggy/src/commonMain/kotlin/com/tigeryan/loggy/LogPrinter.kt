@@ -2,5 +2,5 @@ package com.tigeryan.loggy
 
 public interface LogPrinter {
 
-    public fun print(lines: List<String>)
+    public fun print(level: Level, lines: List<String>)
 }
