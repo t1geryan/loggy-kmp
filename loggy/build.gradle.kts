@@ -8,7 +8,7 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "com.tigeryan"
+group = "io.github.t1geryan"
 version = "0.0.1"
 
 kotlin {
@@ -42,43 +42,43 @@ kotlin {
 }
 
 android {
-    namespace = "com.tigeryan.loggy"
+    namespace = "io.github.t1geryan.loggy"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
 }
 
-//mavenPublishing {
-//    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
-//
-//    signAllPublications()
-//
-//    coordinates(group.toString(), "library", version.toString())
-//
-//    pom {
-//        name = "My library"
-//        description = "A library."
-//        inceptionYear = "2024"
-//        url = "https://github.com/kotlin/multiplatform-library-template/"
-//        licenses {
-//            license {
-//                name = "XXX"
-//                url = "YYY"
-//                distribution = "ZZZ"
-//            }
-//        }
-//        developers {
-//            developer {
-//                id = "XXX"
-//                name = "YYY"
-//                url = "ZZZ"
-//            }
-//        }
-//        scm {
-//            url = "XXX"
-//            connection = "YYY"
-//            developerConnection = "ZZZ"
-//        }
-//    }
-//}
+mavenPublishing {
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+
+    signAllPublications()
+
+    coordinates(group.toString(), "loggy", version.toString())
+
+    pom {
+        name = "Loggy KMP"
+        description = "A Kotlin Multiplatform Logging Library."
+        inceptionYear = "2025"
+        url = "https://github.com/t1geryan/loggy-kmp"
+        licenses {
+            license {
+                name = "The Apache License, Version 2.0"
+                url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+                distribution = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        }
+        developers {
+            developer {
+                id = "t1geryan"
+                name = "Tigran"
+                url = "https://github.com/t1geryan"
+            }
+        }
+        scm {
+            url = "https://github.com/t1geryan/loggy-kmp/"
+            connection = "scm:git:ssh://git@github.com/t1geryan/loggy-kmp/"
+            developerConnection = "scm:git:ssh://git@github.com/t1geryan/loggy-kmp/"
+        }
+    }
+}
